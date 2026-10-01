@@ -1,4 +1,8 @@
 <?php
+require_once __DIR__ . "/../../repositories/book-repository.php";
+
+$book = getBook();
+
 $pageTitle = "Detail Buku";
 $pageSubtitle = "Informasi lengkap buku beserta kategori dan penulis";
 ?>
@@ -12,9 +16,6 @@ $pageSubtitle = "Informasi lengkap buku beserta kategori dan penulis";
   <link rel="stylesheet" href="../../styles/books/show.css">
 </head>
 <body>
-  <?php
-  require '../../repositories/book-repository.php';
-  ?>
   <div class="app-shell">
   <?php require_once __DIR__ . "/../../components/admin/sidebar.php" ?>
 
