@@ -17,7 +17,4 @@ try {
 } catch (PDOException $error) {
     die("Koneksi ke database gagal: " . $error->getMessage());
 }
-
-
-
 ?>
