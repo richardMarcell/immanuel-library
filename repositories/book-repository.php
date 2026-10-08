@@ -29,7 +29,7 @@ function getBooks()
   foreach ($books as $index => $book) {
     $books[$index]['authors'] = $bookByAuthors[$book['id']] ?? [];
   }
-  
+
   return $books;
 }
 
